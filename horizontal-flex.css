@@ -1,0 +1,16 @@
+.content-gallery ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.content-gallery ul li {
+  padding: 0 10px 10px 0;
+}
+
+.content-gallery ul li figure {
+  margin: 0;
+}
