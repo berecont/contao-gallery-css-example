@@ -1,0 +1,26 @@
+.content-gallery {
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 1.5rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;        
+    }
+
+    li {
+        grid-column: span 12;
+    }
+
+    figure {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 992px) {
+        &.content-gallery--cols-2 li { grid-column: span 6; }  // 2 Spalten
+        &.content-gallery--cols-3 li { grid-column: span 4; }  // 3 Spalten
+        &.content-gallery--cols-4 li { grid-column: span 3; }  // 4 Spalten (Fix!)
+        &.content-gallery--cols-6 li { grid-column: span 2; }  // 6 Spalten
+    }
+}
